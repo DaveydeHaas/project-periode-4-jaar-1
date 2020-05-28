@@ -5,3 +5,22 @@
     color: #ffffff;
     font-family: 'Jost', sans-serif;
  }
+
+/* footer */
+
+.footer-color1 
+{
+   background-color: #0D0E29;
+   color:#0D0E29;
+}
+
+.footer-color2
+{
+   background-color: #FFFFFF;
+   color:#FFFFFF;
+}
+
+.footer-color3
+{
+   color: #777373;
+}
