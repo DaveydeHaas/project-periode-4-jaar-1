@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="page-footer footer-color2">
+<footer class="page-footer footer-color2 footer_background">
 
 
     <div class="container-fluid footer-color1 ">

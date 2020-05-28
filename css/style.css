@@ -1,25 +1,70 @@
  /* basis content */
  .basic-content {
-    background-color: #777373;
-    color: #ffffff;
-    font-family: 'Jost', sans-serif;
- }
-
-/* footer */
-
-.footer-color1 
-{
-   background-color: #0D0E29;
-   color:#0D0E29;
+   background-color: #777373;
+   color: #ffffff;
+   font-family: 'Jost', sans-serif;
 }
 
-.footer-color2
-{
-   background-color: #FFFFFF;
-   color:#FFFFFF;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  color: #000000;
 }
 
-.footer-color3
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 3px 12px;
+  text-decoration: none;
+}
+
+
+/* Change the link color on hover */
+
+li a:hover {
+  color: #ffffff;
+}
+
+/* navbar */
+
+.navbar-background-color {
+  background-color: #0D0E29 ;
+}
+
+.no-padding {
+  padding: 0%;
+}
+
+.navbar-fontsize {
+  font-size: 17px;
+}
+
+.navbar-login {
+  font-size: 12px;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.brand-logo {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 0%;
+}
+.nav-profile
 {
-   color: #777373;
+  
+  padding-bottom: 1px;
+  font-size: 14px;
+  color: #ffffff !important;
+}
+
+
+
+/*footer */
+.footer_background{
+   background-color: #0D0E29 ;
 }
