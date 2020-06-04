@@ -1,5 +1,16 @@
 <!-- Footer -->
-<footer class="page-footer footer-color1 footer-top">
+<footer class="page-footer footer_background">
+
+
+    <div class="container-fluid footer-color1 ">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+        </div>
+        <!-- Grid row-->
+
+    </div>
+
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left mt-5">
@@ -8,27 +19,27 @@
         <div class="row mt-3">
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-text">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
                 <!-- Content -->
                 <h6 class="text-uppercase font-weight-bold">Game District</h6>
-                <hr class="footer-color2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>Koop al uw game merchandise voordelig online! Dé online specialist in game kleding en game merchandise!</p>
 
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-text">
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
 
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Producten</h6>
-                <hr class="footer-color2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
-                    <a href="#!">Figuren</a>
+                    <a href="#!" class="hreffix">Figuren</a>
                 </p>
                 <p>
-                    <a href="#!">Kleding</a>
+                    <a href="#!" class="hreffix">Kleding</a>
                 </p>
                 <p>
                     <a href="#!"></a>
@@ -41,19 +52,19 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 footer-text">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Informatie</h6>
-                <hr class="footer-color2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-               
-                    <li><a href="index.php?content=home">Verzending & bezorging</a></li>
-                
-               
-                    <li><a href="index.php?content=home">Terugstuurbeleid</a></li>
-               
+                <hr class="mb-4 mt-0 d-inline-block mx-auto " style="width: 60px;">
                 <p>
-                    <li><a href="#!">Service Voorwaarden</a></li>
+                    <a href="#!" class="hreffix">Verzending & bezorging</a>
+                </p>
+                <p>
+                    <a href="#!" class="hreffix">Terugstuurbeleid</a>
+                </p>
+                <p>
+                    <a href="#!"></a>
                 </p>
                 <p>
                     <a href="#!"></a>
@@ -63,11 +74,11 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 footer-text">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
 
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                <hr class="footer-color2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>Utrecht, AC 1111, NL</p>
                 <p>contact@gamedistrict.com</p>
                 <p>+ 06 234 567 88</p>
