@@ -66,6 +66,19 @@ a:hover {
   color: #ffffff !important;
 }
 
+.icon-button {     
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  width: 40px;       
+}
+
+.dropdown-colorfix{
+  color: #000000 !important;
+}
+
 /* footer */
 .footer-top
 {
