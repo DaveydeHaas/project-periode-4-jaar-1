@@ -8,12 +8,21 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="col-9 collapse navbar-collapse no-padding" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto ">
+        <div class="collapse navbar-collapse no-padding" id="navbarSupportedContent">
+        <div class="col-4">  
+        <ul class="navbar-nav mr-auto ">
             <li class="<?php if ($content == 'home') echo 'active'?>"><a href="index.php?content=home">Home</a></li>
             <li class="<?php if ($content == 'webshop') echo 'active'?>"><a href="index.php?content=webshop">Webshop</a></li> 
             <li class="<?php if ($content == 'winkelmand') echo 'active'?>"><a href="index.php?content=winkelmand">Winkelmand</a></li> 
           </ul>
+        </div>
+        <div class="col-6">
+          <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-2">
           <ul class="nav nav-profile">
             <li class="<?php if ($content == 'login') echo 'active'?>"><a href="index.php?content=login">login</a></li>
             <li class="<?php if ($content == 'registratie') echo 'active'?>"><a href="index.php?content=registratie">registratie</a></li>
