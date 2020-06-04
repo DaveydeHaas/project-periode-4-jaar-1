@@ -1,61 +1,60 @@
+<!-- form registratie -->
+
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3"></div>
 
-        <div class="col-6">
-            <!-- Material form register -->
-            <div class="card">
+        <div class="col-4"></div>
 
-                <h5 class="card-header info-color white-text text-center py-4">
-                    <strong>Registreren</strong>
-                </h5>
-
-                <!--Card content-->
-                <div class="card-body px-lg-5 pt-0">
-
-                    <!-- Form -->
-                    <form class="text-center" style="color: #757575;" action="#!">
-
-                            
-                    
-                        <!-- E-mail -->
-                        <div class="md-form mt-0">
-                            <input type="email" id="materialRegisterFormLastName" class="form-control">
-                            <label for="materialRegisterFormLastName">Gebruikersnaam</label>
-                        </div>
-
-                        <!-- E-mail -->
-                        <div class="md-form mt-0">
-                            <input type="email" id="materialRegisterFormEmail" class="form-control">
-                            <label for="materialRegisterFormEmail">E-mail</label>
-                        </div>
-
-                        <!-- Password -->
-                        <div class="md-form">
-                            <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
-                            <label for="materialRegisterFormPassword">Wachtwoord</label>
-                        </div>
-
-
-                        <!-- Sign up button -->
-                        <button class="btn btn-outline-dark btn-rounded btn-block my-4" type="submit">Aanmelden</button>
-
-                    
-
-                        <!-- Terms of service -->
-                        <p>Door op
-                            <b>Aanmelden</b> te klikken, gaat u akkoord met onze
-                            <a href="" target="_blank">verservice voorwaarden</a>
-
-                    </form>
-                    <!-- Form -->
-
+        <div class="card col-4 registratie-margin-top registratie-margin-bottom registratie-color1 ">
+            <div class="card-body">
+                <div class="text-center">
+                    <h1 class="card-title">Game District</h1>
+                    <h4 class="card-subtitle mb-2 text-muted">Registratie</h4>
                 </div>
 
-            </div>
-            <!-- Material form register -->
-        </div>
+                <form action="./index.php?content=registratie_script" method="post">
+                    <div class="form-container">
+                        <div class="form-row">
 
-        <div class="col-3"></div>
+                            <div class="form-group col-12">
+                                <i class="fa fa-user"></i>
+                                <label for="inputusername">Gebruikersnaam</label>
+                                <input type="text" name="username" class="form-control" id="username" placeholder="Username" autofocus required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <i class="fa fa-envelope"></i>
+                                <label for="inputusername">Email</label>
+                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <i class="fa fa-lock"></i>
+                                <label for="inputPassword4">Wachtwoord</label>
+                                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" required>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <i class="fa fa-lock"></i>
+                                <label for="inputAddress">Opnieuw Wachtwoord</label>
+                                <input type="password" name="cpass" class="form-control" id="inputVerifyPassword" placeholder="Verify Password" required>
+                            <br>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-block registratie-button" value="checkpassword">Klaar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
+
+<div class="col-4"></div>

@@ -88,3 +88,18 @@ li a:hover {
 {
    color:#FFFFFF;
 }
+
+/* Registratie */
+
+.registratie-margin-top {
+    margin-top: 50px;
+}
+
+.registratie-margin-bottom {
+    margin-bottom: 50px;
+}
+
+.registratie-color1 
+{
+   background-color: #0D0E29;
+}
