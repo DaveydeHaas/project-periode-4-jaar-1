@@ -1,17 +1,5 @@
 <!-- Footer -->
-<footer class="page-footer footer_background">
-
-
-    <div class="container-fluid footer-color1 ">
-
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
-        </div>
-        <!-- Grid row-->
-
-    </div>
-
-
+<footer class="page-footer footer_background footer-top ">
     <!-- Footer Links -->
     <div class="container text-center text-md-left mt-5">
 

@@ -27,6 +27,16 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
             <li class="<?php if ($content == 'login') echo 'active'?>"><a href="index.php?content=login">login</a></li>
             <li class="<?php if ($content == 'registratie') echo 'active'?>"><a href="index.php?content=registratie">registratie</a></li>
           </ul>
+
+          <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
         </div>
   </div>
 </nav>         
