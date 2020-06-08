@@ -23,7 +23,7 @@
 
                 <!-- Content -->
                 <h6 class="text-uppercase font-weight-bold">Game District</h6>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line " style="width: 112px;">
                 <p>Koop al uw game merchandise voordelig online! Dé online specialist in game kleding en game merchandise!</p>
 
             </div>
@@ -34,7 +34,7 @@
 
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Producten</h6>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line" style="width: 90px;">
                 <p>
                     <a href="#!" class="hreffix">Figuren</a>
                 </p>
@@ -56,7 +56,7 @@
 
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Informatie</h6>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto " style="width: 60px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line" style="width: 90px;">
                 <p>
                     <a href="#!" class="hreffix">Verzending & bezorging</a>
                 </p>
@@ -78,7 +78,7 @@
 
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line" style="width: 70px;">
                 <p>Utrecht, AC 1111, NL</p>
                 <p>contact@gamedistrict.com</p>
                 <p>+ 06 234 567 88</p>

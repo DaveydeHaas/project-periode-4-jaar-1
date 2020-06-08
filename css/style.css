@@ -72,7 +72,14 @@ a:hover {
    padding-top: 1px;
 }
 
-.hreffix{
+.hreffix
+{
+  color: #FFFFFF;
+}
+
+.footer-line 
+{
+  background-color: #FFFFFF;
   color: #FFFFFF;
 }
 
