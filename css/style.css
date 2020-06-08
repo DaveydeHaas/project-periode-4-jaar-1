@@ -139,7 +139,14 @@ nav a{
    padding-top: 10px;
 }
 
-.hreffix{
+.hreffix
+{
+  color: #FFFFFF;
+}
+
+.footer-line 
+{
+  background-color: #FFFFFF;
   color: #FFFFFF;
 }
 
