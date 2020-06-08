@@ -10,42 +10,56 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
     </button>
     <div class="collapse navbar-collapse no-padding" id="navbarSupportedContent">
       <div class="col-4">
-        <ul class="navbar-nav mr-auto ">
-          <li class="<?php if ($content == 'home') echo 'active'?>"><a href="index.php?content=home">Home</a></li>
-          <li class="<?php if ($content == 'webshop') echo 'active'?>"><a href="index.php?content=webshop">Webshop</a>
+        <ul class="navbar-nav mr-auto mega-drop">
+          <li class="<?php if ($content == 'Home') echo 'active'?>"><a href="index.php?content=home">Home</a>
           </li>
-          <li class="<?php if ($content == 'winkelmand') echo 'active'?>"><a
-              href="index.php?content=winkelmand">Winkelmand</a></li>
+          <li class="<?php if ($content == 'webshop') echo 'active'?>"><a class="text-fix">Categoriën</a>
+            <div class="drop-sub">
+              <ul>
+                <li><a href="">link 01</a></li>
+                <li><a href="">link 02</a></li>
+                <li><a href="">link 03</a></li>
+                <li><a href="">link 04</a></li>
+                <li><a href="">link 05</a></li>
+              </ul>
+            </div>
+          </li>    
         </ul>
       </div>
       <div class="col-6">
         <form class="form-inline" action="/action_page.php">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-success" type="submit">Search</button>
+          <input class="form-control mr-sm-2 search-width" type="text" placeholder="Search">
+          <button><i class="fa fa-search"></i></button>
         </form>
       </div>
       <div class="dropdown">
         <button class="icon-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100" alt="...">
         </button>
-        <div class="dropdown-menu">
-          <form class="px-4 py-3">
+        <div class="dropdown-menu dropdown-content">
+          <form class="px-4 py-3 login-dropdown">
             <div class="form-group">
-              <label for="exampleDropdownFormEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+              <i class="fa fa-user"></i>
+              <label for="exampleDropdownFormEmail1">Gebruikersnaam</label>
+              <input type="name" class="form-control" id="exampleDropdownFormEmail1" placeholder="Gebruikersnaam">
             </div>
             <div class="form-group">
+            <i class="fa fa-lock"></i>
               <label for="exampleDropdownFormPassword1">Wachtwoord</label>
               <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Wachtwoord">
             </div>
             <button type="submit" class="btn btn-primary">Log in</button>
           </form>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="index.php?content=registratie">New around here? Sign up</a>
-          <a class="dropdown-item" href="#">Forgot password?</a>
+          <li class=""><a href="index.php?content=registratie">Nieuw? Registreer hier!</a></li>
+          <li class=""><a href="#">Wachtwoord vergeten</a></li>
         </div>
 
       </div>
+      <button class="<?php if ($content == 'home') echo 'active'?> icon-button winkelmand-border" type="button" id="Button"
+          aria-expanded="false"><a href="index.php?content=winkelmand"><img src="./afbeeldingen/winkelwagen" class="winkelmand-style"></a></button>
     </div>
   </div>
 </nav>
+
+

@@ -20,6 +20,11 @@ li a {
   text-decoration: none;
 }
 
+.text-fix{
+  color: #ffffff !important;
+  font-family: 'Jost', sans-serif !important;
+}
+
 
 /* Change the link color on hover */
 
@@ -32,6 +37,37 @@ a:hover {
 }
 
 /* navbar */
+
+nav ul{
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  position: relative;
+
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav li:hover .drop-sub{
+  display: block;
+}
+
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: .75em 1.75em;
+}
+
+.drop-sub{
+  position: absolute;
+  background-color: #0D0E29;
+  width: 100%;
+  display: none;
+}
+
 
 .navbar-background-color {
   background-color: #0D0E29 ;
@@ -75,8 +111,26 @@ a:hover {
   width: 40px;       
 }
 
-.dropdown-colorfix{
-  color: #000000 !important;
+.winkelmand-style{
+  width: 35px;
+}
+
+.winkelmand-border{
+  width: 85px;
+}
+
+
+.login-dropdown{
+  width: 250px;
+}
+
+.search-width{
+  width: 400px !important;
+}
+
+.dropdown-content{
+  background-color: #0D0E29;
+  color: #FFFFFF;
 }
 
 /* footer */
