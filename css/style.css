@@ -148,6 +148,12 @@ button:hover .login-dropdown{
 /* footer */
 .footer-top
 {
+   padding-top: 20px;
+}
+
+.footer-copyright 
+{
+  background-color: #09091c;
    padding-top: 10px;
 }
 

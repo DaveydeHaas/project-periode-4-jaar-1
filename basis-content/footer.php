@@ -1,7 +1,25 @@
 <!-- Footer -->
+<<<<<<< HEAD
+<footer class="page-footer footer_background">
+
+
+    <div class="container-fluid footer-color1 ">
+
+        <!-- Grid row
+        <div class="row py-4 d-flex align-items-center">
+        </div>
+
+        -->
+        <!-- Grid row-->
+
+    </div>
+
+
+=======
 <footer class="page-footer footer_background footer-top ">
+>>>>>>> b11ccf2ecf67c0dd9dea7296748528e1999d6f23
     <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5">
+    <div class="container text-center text-md-left mt-5 footer-top">
 
         <!-- Grid row -->
         <div class="row mt-3">
@@ -11,7 +29,7 @@
 
                 <!-- Content -->
                 <h6 class="text-uppercase font-weight-bold">Game District</h6>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line " style="width: 112px;">
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line" style="width: 112px;">
                 <p>Koop al uw game merchandise voordelig online! Dé online specialist in game kleding en game merchandise!</p>
 
             </div>
@@ -67,10 +85,11 @@
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Contact</h6>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line" style="width: 70px;">
-                <p>Utrecht, AC 1111, NL</p>
-                <p>contact@gamedistrict.com</p>
-                <p>+ 06 234 567 88</p>
-                <p>+ 06 234 567 89</p>
+
+                <p><i class="fa fa-home"></i> Utrecht, AC 1111, NL</p>
+                <p><i class="fa fa-envelope"></i> contact@gamedistrict.com</p>
+                <p><i class="fa fa-phone"></i> + 06 234 567 88</p>
+                <p><i class="fa fa-phone"></i> + 06 234 567 89</p>
 
             </div>
             <!-- Grid column -->
@@ -80,6 +99,12 @@
 
     </div>
     <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="http://project4.org/index.php?content=home"> GameDistrict.com</a>
+    </div>
+    <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
