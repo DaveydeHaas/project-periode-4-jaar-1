@@ -1,6 +1,6 @@
 <?php
 $content = (isset($_GET['content'])?$_GET['content']:false); ?>
-<nav class="navbar-background-color navbar-fontsize navbar navbar-expand-lg navbar-light ">
+<nav class="navbar-background-color navbar-fontsize navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand <?php if ($content == 'home') echo 'active'?>" href="index.php?content=home"><img
         src="./afbeeldingen/logo.png" alt="Homepage Logo brandLogo" class="brand-logo"></a>
@@ -13,6 +13,7 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
         <ul class="navbar-nav mr-auto mega-drop">
           <li class="<?php if ($content == 'Home') echo 'active'?>"><a href="index.php?content=home">Home</a>
           </li>
+          <!-- categoriën -->
           <li class="<?php if ($content == 'webshop') echo 'active'?>"><a class="text-fix">Categoriën</a>
             <div class="drop-sub">
               <ul>
@@ -26,17 +27,19 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
           </li>    
         </ul>
       </div>
+      <!-- searchbar -->
       <div class="col-6">
         <form class="form-inline" action="/action_page.php">
           <input class="form-control mr-sm-2 search-width" type="text" placeholder="Search">
           <button><i class="fa fa-search"></i></button>
         </form>
       </div>
+      <!-- login -->
       <div class="dropdown">
         <button class="icon-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100" alt="...">
+          aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100 login-dropdown" alt="...">
         </button>
-        <div class="dropdown-menu dropdown-content">
+        <div class="dropdown-menu dropdown-content login-dropdown">
           <form class="px-4 py-3 login-dropdown">
             <div class="form-group">
               <i class="fa fa-user"></i>
