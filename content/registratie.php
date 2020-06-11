@@ -19,7 +19,7 @@
                             <div class="form-group col-12">
                                 <i class="fa fa-user"></i>
                                 <label for="inputusername">Gebruikersnaam</label>
-                                <input type="text" name="username" class="form-control" id="username" placeholder="Username" autofocus required>
+                                <input type="text" name="username" class="form-control" id="username" placeholder="Username" autofocus>
                             </div>
                         </div>
 
@@ -27,7 +27,7 @@
                             <div class="form-group col-12">
                                 <i class="fa fa-envelope"></i>
                                 <label for="inputusername">Email</label>
-                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
                             </div>
                         </div>
 
@@ -35,13 +35,13 @@
                             <div class="form-group col-12">
                                 <i class="fa fa-lock"></i>
                                 <label for="inputPassword4">Wachtwoord</label>
-                                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" required>
+                                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" >
                             </div>
 
                             <div class="form-group col-12">
                                 <i class="fa fa-lock"></i>
                                 <label for="inputAddress">Opnieuw Wachtwoord</label>
-                                <input type="password" name="cpass" class="form-control" id="inputVerifyPassword" placeholder="Verify Password" required>
+                                <input type="password" name="cpass" class="form-control" id="inputVerifyPassword" placeholder="Verify Password" >
                             <br>
                             </div>
                         </div>
