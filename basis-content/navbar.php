@@ -37,7 +37,7 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
       <!-- login -->
       <div class="dropdown">
         <button class="icon-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100 login-dropdown" alt="...">
+          aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100 login-dropdown " alt="...">
         </button>
         <div class="dropdown-menu dropdown-content login-dropdown">
           <form class="px-4 py-3 login-dropdown">

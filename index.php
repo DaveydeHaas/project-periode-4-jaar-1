@@ -1,6 +1,8 @@
 <?php ob_start();
 session_start();
-session_gc(); ?>
+session_gc(); 
+include("./scripts/db_connect.php");//dit is voor test doel einden wordt later verplaatst
+?>
 
 <!DOCTYPE html>
 <html lang="en">

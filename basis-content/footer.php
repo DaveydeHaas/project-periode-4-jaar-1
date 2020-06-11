@@ -1,5 +1,4 @@
 <!-- Footer -->
-<<<<<<< HEAD
 <footer class="page-footer footer_background">
 
 
@@ -15,9 +14,6 @@
     </div>
 
 
-=======
-<footer class="page-footer footer_background footer-top ">
->>>>>>> b11ccf2ecf67c0dd9dea7296748528e1999d6f23
     <!-- Footer Links -->
     <div class="container text-center text-md-left mt-5 footer-top">
 
