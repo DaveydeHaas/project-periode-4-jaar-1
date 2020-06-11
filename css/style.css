@@ -50,10 +50,6 @@ nav li{
   display: inline-block;
 }
 
-nav li:hover .drop-sub{
-  display: block;
-}
-
 nav a{
   color: #ffffff;
   text-decoration: none;
@@ -61,14 +57,7 @@ nav a{
   padding: .75em 1.75em;
 }
 
-.drop-sub{
-  position: absolute;
-  background-color: #0D0E29;
-  width: 100%;
-  display: none;
-}
-
-
+/* navbar basic styling */
 .navbar-background-color {
   background-color: #0D0E29 ;
 }
@@ -111,6 +100,41 @@ nav a{
   width: 40px;       
 }
 
+.dropdown-content{
+  background-color: #0D0E29;
+  color: #FFFFFF;
+}
+
+.search-width{
+  width: 50% !important;
+}
+
+
+/* mega-dropdown */
+.drop-sub{
+  position: absolute;
+  background-color: #0D0E29;
+  width: 440%;
+  display: none;
+}
+
+nav li:hover .drop-sub{
+  display: block;
+}
+
+/* login-dropddown */
+
+nav button:hover .login-dropdown{
+  display: block;
+}
+
+
+.login-dropdown{
+  width: 250px;
+}
+
+
+/* winkelmand-navbar */
 .winkelmand-style{
   width: 35px;
 }
@@ -119,19 +143,6 @@ nav a{
   width: 85px;
 }
 
-
-.login-dropdown{
-  width: 250px;
-}
-
-.search-width{
-  width: 400px !important;
-}
-
-.dropdown-content{
-  background-color: #0D0E29;
-  color: #FFFFFF;
-}
 
 /* footer */
 .footer-top
