@@ -25,6 +25,9 @@ li a {
   font-family: 'Jost', sans-serif !important;
 }
 
+.navbar-to-content-fix{
+  margin-bottom: 40px;
+}
 
 /* Change the link color on hover */
 
@@ -193,3 +196,6 @@ nav button:hover .login-dropdown{
 {
    background-color: #0D0E29;
 }
+
+/* home */
+

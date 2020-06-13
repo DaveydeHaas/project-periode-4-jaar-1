@@ -30,8 +30,8 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
       <!-- searchbar -->
       <div class="col-6">
         <form class="form-inline" action="/action_page.php">
-          <input class="form-control mr-sm-2 search-width" type="text" placeholder="Search">
-          <button><i class="fa fa-search"></i></button>
+          <input class="form-control mr-sm-2 search-width" type="text" name="search" placeholder="Search">
+          <button name="submit-search"><i class="fa fa-search"></i></button>
         </form>
       </div>
       <!-- login -->
