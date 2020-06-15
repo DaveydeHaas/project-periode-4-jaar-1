@@ -67,21 +67,15 @@ else
                             {
 
                                 $password_hash = password_hash($password, PASSWORD_BCRYPT);
-                                //Gegevens sturen naar de database tabel register
-                                $sql = "INSERT INTO `users` (`id`,
-                                                             `username`
-                                                             `email`,
-                                                             `password`,
-                                                             `userrole`)
-                                                       VALUES(NULL,
-                                                             '$username'
-                                                             '$email',
-                                                             '$password_hash'
-                                                             'user')";
+                                //Gegevens sturen naar de database tabel users
+                                $sql = "INSERT INTO `users`(`id`, `username`, `email`, `password`, `userrole`) VALUES(NULL, '$username', '$email', '$password_hash', 'user')"; 
                             
-                                if (mysqli_query($conn, $sql)) {
+                                if (mysqli_query($conn, $sql)) 
+                                {
                                 header("Location: ./index.php?content=message&alert=register-complete");
-                                } else {
+                                } 
+                                else 
+                                {
                                 header ("Location: ./index.php?content=message&alert=register-error");   
                                 }
                             }
