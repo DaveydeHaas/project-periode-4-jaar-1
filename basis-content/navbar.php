@@ -10,21 +10,24 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
     </button>
     <div class="collapse navbar-collapse no-padding" id="navbarSupportedContent">
       <div class="col-4">
-        <ul class="navbar-nav mr-auto mega-drop">
-          <li class="<?php if ($content == 'Home') echo 'active'?>"><a href="index.php?content=home">Home</a>
+          <ul class="navbar-nav mr-auto">
+            <li class="<?php if ($content == 'Home') echo 'active'?>"><a href="index.php?content=home">Home</a>
+            </li>
+            <!-- categoriën -->
+            <li class="nav-item dropdown">
+              <a class=" dropdown" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Merchandise
+              </a>
+              <div class="dropdown-menu dropdown-content login-dropdown" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-width">
+                  <a class="dropdown-item category-style" href="index.php?content=webshop">League of Legends</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop">Rainbow six Siege</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop">Forza Horizon 4</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop">God of War 3</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop">Minecraft</a>
+              </ul>              
+              </div>
           </li>
-          <!-- categoriën -->
-          <li class="<?php if ($content == 'webshop') echo 'active'?>"><a class="text-fix">Categoriën</a>
-            <div class="drop-sub">
-              <ul>
-                <li><a href="">link 01</a></li>
-                <li><a href="">link 02</a></li>
-                <li><a href="">link 03</a></li>
-                <li><a href="">link 04</a></li>
-                <li><a href="">link 05</a></li>
-              </ul>
-            </div>
-          </li>    
         </ul>
       </div>
       <!-- searchbar -->
