@@ -210,3 +210,24 @@ li.dropdown {
 
 /* home */
 
+
+/* webshop-cards */
+
+.card-webshop{
+  color: #000000;
+  margin-bottom: 9%;
+}
+
+.btn-placement{
+  text-align: left;
+}
+
+
+.price-placement{
+  text-align: left;
+}
+
+.image-styling{
+  height: 10%;
+  width: 90%;
+}
