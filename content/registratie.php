@@ -12,7 +12,7 @@
                     <h4 class="card-subtitle mb-2 text-muted">Registratie</h4>
                 </div>
 
-                <form action="./index.php?content=registratie_script" method="post">
+                <form action="./index.php?content=registratie_script" method="POST">
                     <div class="form-container">
                         <div class="form-row">
 
@@ -35,21 +35,21 @@
                             <div class="form-group col-12">
                                 <i class="fa fa-lock"></i>
                                 <label for="inputPassword4">Wachtwoord</label>
-                                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password" >
+                                <input type="password" name="pass" class="form-control" id="inputPassword" placeholder="Password">
                             </div>
 
                             <div class="form-group col-12">
                                 <i class="fa fa-lock"></i>
                                 <label for="inputAddress">Opnieuw Wachtwoord</label>
-                                <input type="password" name="cpass" class="form-control" id="inputVerifyPassword" placeholder="Verify Password" >
-                            <br>
+                                <input type="password" name="cpass" class="form-control" id="inputVerifyPassword" placeholder="Verify Password">
+                                <br>
                             </div>
                         </div>
-
                         <div class="form-row">
                         </div>
 
                         <button type="submit" class="btn btn-lg btn-block registratie-button" value="checkpassword">Klaar</button>
+
                     </div>
                 </form>
             </div>
