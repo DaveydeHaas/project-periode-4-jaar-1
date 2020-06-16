@@ -215,6 +215,7 @@ li.dropdown {
 
 .card-webshop{
   color: #000000;
+  background-color: #f6f6f6;
   margin-bottom: 9%;
 }
 
@@ -228,6 +229,6 @@ li.dropdown {
 }
 
 .image-styling{
-  height: 10%;
-  width: 90%;
+  max-width: 100%;
+  height: auto;
 }
