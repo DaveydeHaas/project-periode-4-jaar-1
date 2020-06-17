@@ -1,6 +1,6 @@
 <?php
 
-function component($productName, $price, $image){
+function component($productName, $price, $image, $beschrijving){
 
     $element = '         
     <div class="col-md-3 col-sm6">
@@ -11,7 +11,7 @@ function component($productName, $price, $image){
                     <h5 class="card-title">' . $productName . '</h5>
                     <hr>
                     <p class="card-text">
-                        Some quick example text to build on the card.
+                        <p class="card-grootte">'. $beschrijving .'</p>
                     </p>
                     <h5 class="price-placement">
                     <button type="submit" name="add" class="btn btn-warning btn-placement">Add to Cart <i class="fa fa-shopping-cart "></i></button>

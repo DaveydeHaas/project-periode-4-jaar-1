@@ -22,18 +22,5 @@ function is_authorized($userroles)
     {
         return true;
     }
-
-    //haalt producten uit de datbase
-    function getData(){
-        include("./scripts/db_connect"); 
-        $sql = "SELECT * FROM products";
-        $result = mysqli_query($conn, $sql);
-
-        if(mysqli_num_rows($result)>0 ){
-            return $result;
-        }
-
-        }
-
 }
 ?>

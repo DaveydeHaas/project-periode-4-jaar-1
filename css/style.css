@@ -219,6 +219,11 @@ li.dropdown {
   margin-bottom: 9%;
 }
 
+.card-grootte{
+  height: 90px;
+
+}
+
 .btn-placement{
   text-align: left;
 }
