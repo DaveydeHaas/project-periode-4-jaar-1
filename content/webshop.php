@@ -1,79 +1,18 @@
 <?php
-
+include("./scripts/db_connect.php");
 require_once("php/component.php");
+include("./scripts/get_db_content");
 
 ?>
 
 <div class="container">
     <div class="row">
         <div class="col-12 navbar-to-content-fix"></div>
-        <!-- 1 -->
-        <?php component();?>
-        <!-- 2 -->
-        <?php component();?>
-        <!-- 3 -->
-        <?php component();?>
-        <!-- 4 -->
-        <?php component();?>
-        <!-- 5 -->
-        <?php component();?>
-        <!-- 6 -->
-        <?php component();?>
-        <div class="col-md-3 col-sm6">
-            <form action="./content/webshop-add.php" method="POST" >
-                <div class="card card-webshop">
-                    <img src="./afbeeldingen/producten/06.png" alt="chibi" class="img-fluid card-img-top image-styling">
-                <div class="card-body">
-                <h5 class="card-title">Product1</h5>
-                    <hr>
-                    <p class="card-text">
-                         Some quick example text to build on the card.
-                    </p>
-                    <h5 class="price-placement">
-                    <button type="submit" name="add" class="btn btn-warning btn-placement">Add to Cart</button>
-                    <span class="price">$400</span>
-                    </h5>
-                </div>
-                </div>
-            </form>
-        </div>
-                <!-- 7 -->
-        <div class="col-md-3 col-sm6">
-            <form action="./content/webshop-add.php" method="POST" >
-                <div class="card card-webshop">
-                    <img src="./afbeeldingen/producten/07.png" alt="chibi" class="img-fluid card-img-top image-styling">
-                <div class="card-body">
-                <h5 class="card-title">Product1</h5>
-                    <hr>
-                    <p class="card-text">
-                         Some quick example text to build on the card.
-                    </p>
-                    <h5 class="price-placement">
-                    <button type="submit" name="add" class="btn btn-warning btn-placement">Add to Cart</button>
-                    <span class="price">$400</span>
-                    </h5>
-                </div>
-                </div>
-            </form>
-        </div>
-                <!-- 8 -->
-        <div class="col-md-3 col-sm6">
-            <form action="./content/webshop-add.php" method="POST" >
-                <div class="card card-webshop">
-                    <img src="./afbeeldingen/producten/08.png" alt="chibi" class="img-fluid card-img-top image-styling">
-                <div class="card-body">
-                <h5 class="card-title">Product1</h5>
-                    <hr>
-                    <p class="card-text">
-                         Some quick example text to build on the card.
-                    </p>
-                    <h5 class="price-placement">
-                    <button type="submit" name="add" class="btn btn-warning btn-placement">Add to Cart</button>
-                    <span class="price">$400</span>
-                    </h5>
-                </div>
-                </div>
-            </form>
-        </div>
+        <?php
+            $result = getData();
+            while ($row = mysqli_fetch_assoc($conn, $result){
+                component($row['productName'], $row['price'], $row['image'], $row['description']);
+            };
+            ?>
     </div>
 </div>
