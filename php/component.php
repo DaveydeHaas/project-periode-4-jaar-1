@@ -1,6 +1,6 @@
 <?php
-
-function component($productName, $price, $image, $beschrijving){
+//Standaard card kan opgevraagd worden als component()
+function component($productName, $price, $image, $beschrijving, $productId){
 
     $element = '         
     <div class="col-md-3 col-sm6">
@@ -15,6 +15,7 @@ function component($productName, $price, $image, $beschrijving){
                     </p>
                     <h5 class="price-placement">
                     <button type="submit" name="add" class="btn btn-warning btn-placement">Add to Cart <i class="fa fa-shopping-cart "></i></button>
+                    <input type="hidden" name="productId" value="'. $productId .'"></input>
                     <span class="price">$'. $price . '</span>
                     </h5>
                 </div>
