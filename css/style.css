@@ -26,7 +26,7 @@ li a {
 }
 
 .navbar-to-content-fix{
-  margin-bottom: 40px;
+  padding-top: 3%;
 }
 
 /* Change the link color on hover */
@@ -154,7 +154,26 @@ li.dropdown {
 }
 
 .winkelmand-border{
-  width: 85px;
+  width: 75px;
+}
+
+
+#cart_count{
+  text-align: center;
+  padding: 0 0.9rem 0.1rem 0.9rem;
+  border-radius: 3rem;
+}
+/* winkelmand */ 
+
+
+
+.card2{
+  background-color: #F6F6F6;
+  color: #000000;
+}
+
+.winkelmand{
+  margin: 1% 7%;
 }
 
 
@@ -212,7 +231,6 @@ li.dropdown {
 
 
 /* webshop-cards */
-
 .card-webshop{
   color: #000000;
   background-color: #f6f6f6;

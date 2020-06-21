@@ -159,7 +159,15 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=home");
     break;
 
-    case "":
+    case "cart-empty":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Authentication error</h1>
+        <hr>
+        <p>U winkelmand is leeg.</p>
+        <br>
+        </div>'; 
 
     break;
 

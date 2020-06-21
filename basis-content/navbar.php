@@ -20,11 +20,11 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
               </a>
               <div class="dropdown-menu dropdown-content login-dropdown" aria-labelledby="navbarDropdown">
                 <ul class="dropdown-width">
-                  <a class="dropdown-item category-style" href="index.php?content=webshop">League of Legends</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop">Rainbow six Siege</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop">Forza Horizon 4</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop">God of War 3</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop">Minecraft</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&LeagueOfLegends">League of Legends</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&RainbowSixSiege">Rainbow six Siege</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&ForzaHorizon4">Forza Horizon 4</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&GodOfWar3">God of War 3</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&Minecraft">Minecraft</a>
               </ul>              
               </div>
           </li>
@@ -57,13 +57,20 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
             <button type="submit" class="btn btn-primary">Log in</button>
           </form>
           <div class="dropdown-divider"></div>
-          <li class=""><a href="index.php?content=registratie">Nieuw? Registreer hier!</a></li>
-          <li class=""><a href="#">Wachtwoord vergeten</a></li>
-        </div>
+            <li class=""><a href="index.php?content=registratie">Nieuw? Registreer hier!</a></li>
+            <li class=""><a href="#">Wachtwoord vergeten</a></li>
+          </div>
 
       </div>
       <button class="<?php if ($content == 'home') echo 'active'?> icon-button winkelmand-border" type="button" id="Button"
           aria-expanded="false"><a href="index.php?content=winkelmand"><img src="./afbeeldingen/winkelwagen" class="winkelmand-style"></a></button>
+          <?php if(isset($_SESSION['cart'])){
+                    $count = count($_SESSION['cart']);
+                    echo '<span id="cart_count" class="text-warning bg-light">' . $count . '</span>';
+                    }else{
+                      echo '<span id="cart_count" class="text-warning bg-light">0</span>';
+                    }
+          ?>
     </div>
   </div>
 </nav>

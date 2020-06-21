@@ -1,8 +1,7 @@
 <?php
-require_once("php/component.php");
+require_once("scripts/component.php");
 include("./scripts/db_content.php");
-
-
+include("./scripts/webshop-add.php");
 
 ?>
 
