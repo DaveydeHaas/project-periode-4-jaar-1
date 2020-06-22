@@ -20,11 +20,11 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
               </a>
               <div class="dropdown-menu dropdown-content login-dropdown" aria-labelledby="navbarDropdown">
                 <ul class="dropdown-width">
-                  <a class="dropdown-item category-style" href="index.php?content=webshop&LeagueOfLegends">League of Legends</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop&RainbowSixSiege">Rainbow six Siege</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop&ForzaHorizon4">Forza Horizon 4</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop&GodOfWar3">God of War 3</a>
-                  <a class="dropdown-item category-style" href="index.php?content=webshop&Minecraft">Minecraft</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&$categoryId=1">League of Legends</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&$categoryId=2">Rainbow six Siege</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&$categoryId=3">Forza Horizon 4</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&$categoryId=4">God of War 3</a>
+                  <a class="dropdown-item category-style" href="index.php?content=webshop&$categoryId=5">Minecraft</a>
               </ul>              
               </div>
           </li>
@@ -32,10 +32,10 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
       </div>
       <!-- searchbar -->
       <div class="col-6">
-        <form class="form-inline" action="/action_page.php">
+       <!-- <form class="form-inline" action="/action_page.php">
           <input class="form-control mr-sm-2 search-width" type="text" name="search" placeholder="Search">
           <button name="submit-search"><i class="fa fa-search"></i></button>
-        </form>
+        </form>-->
       </div>
       <!-- login -->
       <div class="dropdown">
@@ -58,7 +58,6 @@ $content = (isset($_GET['content'])?$_GET['content']:false); ?>
           </form>
           <div class="dropdown-divider"></div>
             <li class=""><a href="index.php?content=registratie">Nieuw? Registreer hier!</a></li>
-            <li class=""><a href="#">Wachtwoord vergeten</a></li>
           </div>
 
       </div>

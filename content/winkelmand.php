@@ -41,9 +41,6 @@ require_once("./scripts/db_content.php");
                 }else{
                     echo '<h3>U heeft nog geen producten in uw winkelmand toegevoegd.<h3>';
                 }
-                if(!isset($_SESSION['cart'])){
-                    echo '<h3>U heeft nog geen producten in uw winkelmand toegevoegd.<h3>';
-                }
                 ?>
             </div>
         </div>

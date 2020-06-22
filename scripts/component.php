@@ -52,7 +52,7 @@ function cartElement($image,$productName, $price, $productId){
                 </div>
             </div>
         </div>
-    </form>
+    </form> 
     ';
     echo $element;
 }
