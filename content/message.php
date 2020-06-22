@@ -81,7 +81,7 @@ switch($alert){
         <br>
         <h1>register-complete</h1>
         <hr>
-        <p>U bent succesvol geregistreerd op de webstie Schizopedia</p>
+        <p>U bent succesvol geregistreerd op de webstie Game Center</p>
         <br>
         </div>'; 
         header("Refresh:3 ; ./index.php?content=home");
@@ -96,7 +96,7 @@ switch($alert){
         <p>Er is iets fout gegaan probeer dit later opnieuw. <br> Als deze fout zich voor blijft doen neem contact op met de server admin.</p>
         <br>
         </div>'; 
-        header("Refresh:30 ; ./index.php?content=registratie");
+        header("Refresh:3 ; ./index.php?content=registratie");
     break;
 
     case "password-no-match":
@@ -120,7 +120,6 @@ switch($alert){
         <p>U heeft 1 van de beide velden niet ingevuld, probeer dit opnieuw </p>
         <br>
         </div>'; 
-        header("Refresh:3 ; ./index.php?content=login");
     break;
 
     case "username-password-false":
