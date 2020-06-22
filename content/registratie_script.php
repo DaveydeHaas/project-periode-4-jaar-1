@@ -78,3 +78,4 @@ if (empty($_POST["username"])) {
 //$sqlusername = "SELECT * FROM `register` WHERE `username` = $username";
 
 //myslqi_query($conn, $sql);
+?>

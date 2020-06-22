@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col-12 navbar-to-content-fix">
         </div>
+        <!-- Carousel -->
         <div class="col-7 ">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -42,6 +43,7 @@
                 </a>
             </div>
         </div>
+        <!-- Welkom -->
         <div class="col-3">
                     <h1>Welkom op gamecenter</h1><hr class="">
         </div> 
