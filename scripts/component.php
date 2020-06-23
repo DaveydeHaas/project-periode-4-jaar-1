@@ -39,7 +39,6 @@ function cartElement($image,$productName, $price, $productId){
                     <small class="text-secondary">Seller:Dailytution</small>
                     <h5 class="pt-2">$'. $price .',-</h5>
                     <div>
-                        <button type="submit" class="btn btn-warning">Opslaan</button>
                         <button type="submit" class="btn btn-danger mx-2" name=verwijder>Verwijder</button>
                     </div>
                 </div>
