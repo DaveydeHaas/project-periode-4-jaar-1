@@ -28,7 +28,7 @@ require_once("./scripts/db_content.php");
                 if(isset($_SESSION['cart'])){
                     $productId = array_column($_SESSION['cart'], 'productId');
 
-                    $result = getData();
+                    $result = getData2();
                     $id;
                     while ($row = mysqli_fetch_assoc($result)){
                         foreach($productId as $id){
@@ -70,7 +70,12 @@ require_once("./scripts/db_content.php");
                         <hr>
                         <h5>
                             <?php echo '$' . $total . ',-'?>
+                            <hr>
                         </h5>
+                    </div>
+                    <div class="col-md-7"></div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-warning">Bestellen</button>
                     </div>
                 </div>
             </div>

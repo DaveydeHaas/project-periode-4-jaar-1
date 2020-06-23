@@ -18,11 +18,11 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
             </a>
             <div class="dropdown-menu dropdown-content login-dropdown" aria-labelledby="navbarDropdown">
               <ul class="dropdown-width">
-                <a class="dropdown-item category-style" href="index.php?content=webshop">League of Legends</a>
-                <a class="dropdown-item category-style" href="index.php?content=webshop">Rainbow six Siege</a>
-                <a class="dropdown-item category-style" href="index.php?content=webshop">Forza Horizon 4</a>
-                <a class="dropdown-item category-style" href="index.php?content=webshop">God of War 3</a>
-                <a class="dropdown-item category-style" href="index.php?content=webshop">Minecraft</a>
+                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=1">League of Legends</a>
+                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=2">Rainbow six Siege</a>
+                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=3">Forza Horizon 4</a>
+                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=4">God of War 3</a>
+                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=5">Minecraft</a>
               </ul>
             </div>
           </li>
