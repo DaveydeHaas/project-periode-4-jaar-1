@@ -3,10 +3,10 @@
 //haalt producten uit de datbase
 function getData(){
     include("db_connect.php");
-    $sql = "SELECT * FROM products";
+    $categoryId = 1;
+    $sql = "SELECT * FROM products WHERE categoryId = '$categoryId'";
     $result = mysqli_query($conn, $sql);
-
-    if(mysqli_num_rows($result)>0 ){
+    if(mysqli_num_rows($result)>0){
         return $result;
     }
 }
