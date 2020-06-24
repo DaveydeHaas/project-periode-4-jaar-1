@@ -228,6 +228,12 @@ li.dropdown {
 
 /* home */
 
+.home_hr
+{
+   background-color: #0D0E29;
+   color: #0D0E29;
+}
+
 
 /* webshop-cards */
 .card-webshop{

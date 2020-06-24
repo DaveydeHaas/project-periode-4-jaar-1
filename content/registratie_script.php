@@ -67,7 +67,7 @@ if (empty($_POST["username"])) {
                                                 </head>
                                                 <body>
                                                     <h1>Activatie</h1>
-                                                    <p>Klik <a href="http://project4.org/index.php?content=verify&id=' . $id . '">hier</a> voor het activeren van uw account.</p>
+                                                    <p>Klik <a href="http://project4.org/index.php?content=verify&id=' . $id . '&pwh=' . $password_hash . '">hier</a> voor het activeren van uw account.</p>
 
                                                     <!-- Optional JavaScript -->
                                                     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -83,6 +83,7 @@ if (empty($_POST["username"])) {
                                     $headers .= "Cc: moderator@gamecenter.org\r\n";
                                     $headers .= "Bcc: root@gamecenter.org";
 
+                                    mail($to, $subject, $message, $headers);
 
                                     header("Location: ./index.php?content=message&alert=register-complete");
                                 } else {
