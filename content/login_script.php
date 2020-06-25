@@ -34,24 +34,25 @@ else {
             if (!password_verify($password, $record["password"])) {
                 header("Location: ./index.php?content=message&alert=username-password-false");
             } else {
+
                 $_SESSION["id"] = $record["id"];
                 $_SESSION["userrole"] = $record["userrole"];
-                $_SESSION["username"] = $record["username"];
+            
                 switch ($record["userrole"]) {
                     case 'user':
                         header("Location: ./index.php?content=u-home");
                         break;
 
                     case 'root':
-                        header("Location: ./index.php?content=home");
+                        header("Location: ./index.php?content=r-home");
                         break;
 
                     case 'admin':
-                        header("Location: ./index.php?content=registratie");
+                        header("Location: ./index.php?content=a-home");
                         break;
 
                     case 'moderator':
-                        header("Location: ./index.php?content=home");
+                        header("Location: ./index.php?content=m-home");
                         break;
 
                     default:
