@@ -23,8 +23,9 @@ var_dump($_GET);
                         <div class="form-row">
                         </div>
                         <button type="submit" class="btn btn-lg btn-block registratie-button">verifiëren</button>
-
                     </div>
+                    <input name="id" type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+                    <input name="pwh" type="hidden" name="id" value="<?php echo $_GET["pwh"]; ?>">
                 </form>
             </div>
         </div>

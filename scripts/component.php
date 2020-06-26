@@ -8,9 +8,9 @@ function component($productName, $price, $image, $beschrijving, $productId){
             <div class="card card-webshop">
                 <img src="'. $image .'" alt="chibi" class="img-fluid card-img-top image-styling">
                 <div class="card-body">
-                    <h5 class="card-title">' . $productName . '</h5>
+                    <h5 class="card-title name-padding">' . $productName . '</h5>
                     <hr>
-                    <p class="card-text">
+                    <p class="card-text ">
                         <p class="card-grootte">'. $beschrijving .'</p>
                     </p>
                     <h5 class="price-placement">
