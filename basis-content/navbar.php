@@ -29,13 +29,18 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
       </div>
       <!-- searchbar -->
       <div class="col-6">
-       <!-- <form class="form-inline" action="/action_page.php">
+        <!-- <form class="form-inline" action="/action_page.php">
           <input class="form-control mr-sm-2 search-width" type="text" name="search" placeholder="Search">
           <button name="submit-search"><i class="fa fa-search"></i></button>
         </form>-->
       </div>
-      <!-- login -->
-      <div class="dropdown">
+      <?php
+      if (isset($_SESSION["id"])) {
+        echo '<button class="';
+        echo ($content == 'logout') ? "active" : "";
+        echo ' logout-border"><a href="index.php?content=logout"><img src="./afbeeldingen/logout" class="logout-style"></a></button>';
+      } else {
+        echo '<div class="dropdown">
         <button class="icon-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100 login-dropdown " alt="...">
         </button>
         <div class="dropdown-menu dropdown-content login-dropdown">
@@ -55,19 +60,24 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
 
           </form>
           <div class="dropdown-divider"></div>
-            <li class=""><a href="index.php?content=registratie">Nieuw? Registreer hier!</a></li>
-          </div>
+          <li class=""><a href="index.php?content=registratie">Nieuw? Registreer hier!</a></li>
+        </div>
+      </div>';
+      }
+      ?>
 
-      </div>
-      <button class="<?php if ($content == 'home') echo 'active'?> icon-button winkelmand-border" type="button" id="Button"
-          aria-expanded="false"><a href="index.php?content=winkelmand"><img src="./afbeeldingen/winkelwagen" class="winkelmand-style"></a></button>
-          <?php if(isset($_SESSION['cart'])){
-                    $count = count($_SESSION['cart']);
-                    echo '<span id="cart_count" class="text-warning bg-light">' . $count . '</span>';
-                    }else{
-                      echo '<span id="cart_count" class="text-warning bg-light">0</span>';
-                    }
-          ?>
+  
+      
+      
+
+      <button class="<?php if ($content == 'winkelmand') echo 'active' ?> icon-button winkelmand-border" type="button" id="Button" aria-expanded="false"><a href="index.php?content=winkelmand"><img src="./afbeeldingen/winkelwagen" class="winkelmand-style"></a></button>
+      <?php if (isset($_SESSION['cart'])) {
+        $count = count($_SESSION['cart']);
+        echo '<span id="cart_count" class="text-warning bg-light">' . $count . '</span>';
+      } else {
+        echo '<span id="cart_count" class="text-warning bg-light">0</span>';
+      }
+      ?>
     </div>
   </div>
 </nav>

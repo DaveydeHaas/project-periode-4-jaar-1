@@ -169,6 +169,18 @@ switch($alert){
         </div>'; 
 
     break;
+    case "logout":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>Logout</h1>
+        <hr>
+        <p>U bent uitgelogd, u wordt doorgestuurd naar de homepage.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=home");
+    break;
 
    
 
