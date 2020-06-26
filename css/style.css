@@ -148,6 +148,17 @@ li.dropdown {
   font-size: 12px;
 }
 
+/* logout */
+.logout-style{
+  width: 35px; 
+  background-color: transparent;
+}
+
+.logout-border{
+  width: 35px;
+  height: auto;
+}
+
 /* winkelmand-navbar */
 .winkelmand-style{
   width: 35px;
