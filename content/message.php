@@ -120,6 +120,7 @@ switch($alert){
         <p>U heeft 1 van de beide velden niet ingevuld, probeer dit opnieuw </p>
         <br>
         </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
     break;
 
     case "username-password-false":
@@ -182,7 +183,59 @@ switch($alert){
         header("Refresh: 3; ./index.php?content=home");
     break;
 
-   
+    
+
+    case "hacker-alert":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen rechten op deze pagina.<hr> U wordt doorgestuurd naar de homepage</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=home");
+    break;
+
+    case "already-activated":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U account is al geverifiërd</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=home");
+    break;
+
+    case "user-activated":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>Gefeliciteerd!</h1>
+        <hr>
+        <p>U bent succesvol geverifiërd</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=home");
+    break;
+
+    case "":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen rechten op deze pagina.<hr> U wordt doorgestuurd naar de homepage</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=home");
+    break;
 
 
     default:

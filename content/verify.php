@@ -1,8 +1,10 @@
 <?php
 
-var_dump($_GET);
 
-
+if(isset($_GET["content"]) && isset($_GET["id"]) && isset($_GET["pwh"])){
+}else{
+    header("Location:  ./index.php?content=message&alert=hacker-alert");
+}
 
 ?>
 

@@ -41,7 +41,7 @@ if(isset($_POST['add+'])){
                         foreach($productId as $id){
                             if($row['productId'] == $id){
                                 cartElement($row['image'], $row['productName'], $row['price'], $row['productId']);
-                                $total = $total + (int)$row['price'] * 2; 
+                                $total = $total + (int)$row['price']; 
                             }
                         }
                     }

@@ -38,7 +38,7 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
       if (isset($_SESSION["id"])) {
         echo '<button class="';
         echo ($content == 'logout') ? "active" : "";
-        echo ' logout-border"><a href="index.php?content=logout"><img src="./afbeeldingen/logout" class="logout-style"></a></button>';
+        echo ' logout-border"><a class="logout-padding" href="index.php?content=logout"><img src="./afbeeldingen/logout" class="logout-image"></a></button>';
       } else {
         echo '<div class="dropdown">
         <button class="icon-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100 login-dropdown " alt="...">
@@ -81,3 +81,5 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
     </div>
   </div>
 </nav>
+
+
