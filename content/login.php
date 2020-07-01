@@ -1,3 +1,8 @@
+<?php
+if(!isset($_SESSION['id'])){
+    header("Location: ./index.php?content=message&alert=bestelling-no-user");
+}
+?>
 <!-- form login -->
 
 <div class="container-fluid">
@@ -5,11 +10,11 @@
 
         <div class="col-4"></div>
 
-        <div class="card col-4 registratie-margin-top registratie-margin-bottom">
+        <div class="card card2 col-4 registratie-margin-top registratie-margin-bottom">
 
             <div class="card-body">
                 <div class="text-center">
-                    <h1 class="card-title">Schizopedia</h1>
+                    <h1 class="card-title">Gamecenter</h1>
                     <h4 class="card-subtitle mb-2 text-muted">Login</h4>
                 </div>
 

@@ -138,6 +138,17 @@ li.dropdown {
   padding-right: 100%;
 }
 
+/* informatie */
+
+.container_info {
+  padding-right: 0px;
+    padding-left: 0px;
+}
+
+.card_info {
+  padding-right: 0px;
+}
+
 /* login dropdown */
 
 .login-dropdown{

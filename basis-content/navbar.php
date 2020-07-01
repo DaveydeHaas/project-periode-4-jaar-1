@@ -10,6 +10,7 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
       <div class="col-4">
         <ul class="navbar-nav mr-auto">
           <li class="<?php if ($content == 'Home') echo 'active' ?>"><a href="index.php?content=home">Home</a>
+          <li class="<?php if ($content == 'Informatie') echo 'active' ?>"><a href="index.php?content=informatie">Informatie</a>
           </li>
           <!-- categoriën -->
           <li class="nav-item dropdown">

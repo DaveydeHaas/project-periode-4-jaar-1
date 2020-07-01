@@ -40,11 +40,11 @@ else {
             
                 switch ($record["userrole"]) {
                     case 'user':
-                        header("Location: ./index.php?content=u-home");
+                        header("Location: ./index.php?content=home");
                         break;
 
                     case 'root':
-                        header("Location: ./index.php?content=r-home");
+                        header("Location: ./index.php?content=a-home");
                         break;
 
                     case 'admin':
@@ -52,7 +52,7 @@ else {
                         break;
 
                     case 'moderator':
-                        header("Location: ./index.php?content=m-home");
+                        header("Location: ./index.php?content=home");
                         break;
 
                     default:

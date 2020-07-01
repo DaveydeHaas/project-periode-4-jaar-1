@@ -4,12 +4,6 @@
 
     <div class="container-fluid footer-color1 ">
 
-        <!-- Grid row
-        <div class="row py-4 d-flex align-items-center">
-        </div>
-
-        -->
-        <!-- Grid row-->
 
     </div>
 
@@ -38,17 +32,12 @@
                 <h6 class="text-uppercase font-weight-bold">Producten</h6>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line" style="width: 90px;">
                 <p>
-                    <a href="#!" class="hreffix">Figuren</a>
+                    <a href="index.php?content=webshop&categoryId=1" class="hreffix">Figuren</a>
                 </p>
                 <p>
-                    <a href="#!" class="hreffix">Kleding</a>
+                    <a href="index.php?content=webshop&categoryId=5" class="hreffix">Kleding</a>
                 </p>
-                <p>
-                    <a href="#!"></a>
-                </p>
-                <p>
-                    <a href="#!"></a>
-                </p>
+
 
             </div>
             <!-- Grid column -->
@@ -60,16 +49,10 @@
                 <h6 class="text-uppercase font-weight-bold">Informatie</h6>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto footer-line" style="width: 90px;">
                 <p>
-                    <a href="#!" class="hreffix">Verzending & bezorging</a>
+                    <a href="index.php?content=informatie" class="hreffix">Verzending & bezorging</a>
                 </p>
                 <p>
-                    <a href="#!" class="hreffix">Terugstuurbeleid</a>
-                </p>
-                <p>
-                    <a href="#!"></a>
-                </p>
-                <p>
-                    <a href="#!"></a>
+                    <a href="index.php?content=informatie" class="hreffix">Terugstuurbeleid</a>
                 </p>
 
             </div>

@@ -1,11 +1,26 @@
 <div class="container-fluid">
 
-    <div class="card text-center">
-        <div class="card-header">
-            <h1 class="text-muted">Welkom op Gamecenter!</h1>
+    <br>
+    <div class="row">
+        <!-- Corona Virus Alert -->
+        <div class="col-2"></div>
+        <div class="alert alert-warning alert-dismissible fade show col-8" role="alert">
+            <h4 class="bold text-center">Coronavirus update</h4>
+            Het is erg druk, daardoor kan de bezorging van je bestelling iets langer duren. Ook zijn niet altijd alle contactopties beschikbaar.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!--  -->
+        <br>
+        <div class="col-12 card text-center">
+            <div class="card-header">
+                <h1 class="text-muted">Welkom op Gamecenter!</h1>
+                <h3 class="text-muted">Koop al uw game merchandise voordelig online!<br>Dé online specialist in game kleding en game merchandise!</h3>
+            </div>
         </div>
     </div>
-
+    <br>
     <!-- Carousel banners-->
     <div class="row">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -35,10 +50,10 @@
             </a>
         </div>
     </div>
-    <!-- Carousel banners -->
+    <!--  -->
     <div class="py-3"></div>
 
-    <!-- -->
+    <!-- Chibi Statue's -->
     <div class="row">
         <div class="col-12">
 
@@ -57,7 +72,7 @@
 
                         <h5 class="card-title text-muted">Garen Chibi</h5>
                         <hr>
-                        <p class="card-text text-muted">League of Legends Chibi van Garen The Might of Demacia</p>
+                        <p class="card-text text-muted">League of Legends Chibi van Garen</p>
                         <hr>
                         <div class="btn btn-outline-warning">
                             <a href="index.php?content=webshop&categoryId=1">
@@ -94,10 +109,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <img src="./afbeeldingen/producten/12.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted">Draven Chibi</h5>
+                        <hr>
+                        <p class="card-text text-muted">League of Legends Chibi van Draven</p>
+                        <hr>
+                        <div class="btn btn-outline-warning">
+                            <a href="index.php?content=webshop&categoryId=1">
+                                NIEUW
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!--  -->
 
             <br>
 
+            <!-- Normal Statue's -->
             <div class="card text-center">
                 <div class="card-header">
                     <h1 class="text-muted">Nieuwe Statue's!</h1>
@@ -123,7 +154,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./afbeeldingen/producten/02.png" class="card-img-top" alt="...">
+                    <img src="./afbeeldingen/producten/02.png" class="card-img-top " alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-muted">Jinx Statue</h5>
                         <hr>
@@ -151,16 +182,9 @@
                     </div>
                 </div>
             </div>
-
-            <br>
-
-
             <!-- -->
 
 
         </div>
     </div>
-
-
-
 </div>
