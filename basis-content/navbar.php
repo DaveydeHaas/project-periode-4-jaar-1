@@ -37,9 +37,40 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
       </div>
       <?php
       if (isset($_SESSION["id"])) {
+
+        switch ($_SESSION["userrole"]) {
+          case 'admin':
+            
+            echo '<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              A-Panel
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.php?content=a-users">Users</a>
+              <a class="dropdown-item" href="index.php?content=a-reset_password">Reset Password</a>
+            </div>
+          </li>';
+
+            break;
+          case 'root':
+
+
+            break;
+          case 'moderator':
+
+
+            break;
+          case 'user':
+
+
+            break;
+          default:
+            break;
+        }
+
         echo '<button class="';
         echo ($content == 'logout') ? "active" : "";
-        echo ' logout-border"><a href="index.php?content=logout"><img src="./afbeeldingen/logout" class="logout-style"></a></button>';
+        echo 'icon-button logout-border"><a href="index.php?content=logout"><img src="./afbeeldingen/logout" class="logout-style"></a></button>';
       } else {
         echo '<div class="dropdown">
         <button class="icon-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100 login-dropdown " alt="...">
@@ -67,9 +98,9 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
       }
       ?>
 
-  
-      
-      
+
+
+
 
       <button class="<?php if ($content == 'winkelmand') echo 'active' ?> icon-button winkelmand-border" type="button" id="Button" aria-expanded="false"><a href="index.php?content=winkelmand"><img src="./afbeeldingen/winkelwagen" class="winkelmand-style"></a></button>
       <?php if (isset($_SESSION['cart'])) {
