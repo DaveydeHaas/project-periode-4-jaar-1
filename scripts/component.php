@@ -8,9 +8,9 @@ function component($productName, $price, $image, $beschrijving, $productId){
             <div class="card card-webshop">
                 <img src="'. $image .'" alt="chibi" class="img-fluid card-img-top image-styling">
                 <div class="card-body">
-                    <h5 class="card-title">' . $productName . '</h5>
+                    <h5 class="card-title name-padding">' . $productName . '</h5>
                     <hr>
-                    <p class="card-text">
+                    <p class="card-text ">
                         <p class="card-grootte">'. $beschrijving .'</p>
                     </p>
                     <h5 class="price-placement">
@@ -44,9 +44,9 @@ function cartElement($image,$productName, $price, $productId){
                 </div>
                 <div class="col-md-3 py-5">
                     <div>
-                        <button type="button" class="btn btn-light rounded-circle"><i class="fa fa-plus"></i></button>
-                        <input type="text" value="1" class="form-control w-25 d-inline">
-                        <button type="button" class="btn btn-light rounded-circle"><i class="fa fa-minus"></i></button>
+                        <button type="button" id="add+" class="btn btn-light rounded-circle"><i class="fa fa-plus"></i></button>
+                        <input type="text" value="1" id="amount" class="form-control w-25 d-inline">
+                        <button type="button" id="add-" class="btn btn-light rounded-circle"><i class="fa fa-minus"></i></button>
                     </div>
                 </div>
             </div>

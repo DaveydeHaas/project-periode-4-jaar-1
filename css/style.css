@@ -149,15 +149,23 @@ li.dropdown {
 }
 
 /* logout */
-.logout-style{
-  width: 35px; 
+.logout-border{
   background-color: transparent;
+  width: 35px;
+  border: none;
+  margin: 0%;
+  padding: 0px;
+}
+.logout-image{
+  width: 100%;
+  padding: 0px;
 }
 
-.logout-border{
-  width: 35px;
-  height: auto;
+.logout-padding{
+  padding: 0px;
+  width: 100%;
 }
+
 
 /* winkelmand-navbar */
 .winkelmand-style{
@@ -276,4 +284,8 @@ li.dropdown {
 .image-styling{
   max-width: 100%;
   height: auto;
+}
+.name-padding{
+  max-height: 3%;
+  min-height: 50px;
 }

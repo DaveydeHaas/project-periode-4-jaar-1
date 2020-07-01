@@ -19,9 +19,8 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
             <div class="dropdown-menu dropdown-content login-dropdown" aria-labelledby="navbarDropdown">
               <ul class="dropdown-width">
                 <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=1">League of Legends</a>
-                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=2">Rainbow six Siege</a>
-                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=3">Forza Horizon 4</a>
-                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=4">God of War 3</a>
+                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=2">God Of War 3</a>
+                <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=3">Rainbow six Siege</a>
                 <a class="dropdown-item category-style" href="index.php?content=webshop&categoryId=5">Minecraft</a>
               </ul>
             </div>
@@ -70,7 +69,7 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
 
         echo '<button class="';
         echo ($content == 'logout') ? "active" : "";
-        echo 'icon-button logout-border"><a href="index.php?content=logout"><img src="./afbeeldingen/logout" class="logout-style"></a></button>';
+        echo ' logout-border"><a class="logout-padding" href="index.php?content=logout"><img src="./afbeeldingen/logout" class="logout-image"></a></button>';
       } else {
         echo '<div class="dropdown">
         <button class="icon-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./afbeeldingen/user-icon" class="d-block w-100 login-dropdown " alt="...">
@@ -113,3 +112,5 @@ $content = (isset($_GET['content']) ? $_GET['content'] : false); ?>
     </div>
   </div>
 </nav>
+
+

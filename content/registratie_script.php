@@ -67,7 +67,7 @@ if (empty($_POST["username"])) {
                                                 </head>
                                                 <body>
                                                     <h1>Activatie</h1>
-                                                    <p>Klik <a href="http://project4.org/index.php?content=verify&id=' . $id . '&pwh=' . $password_hash . '">hier</a> voor het activeren van uw account.</p>
+                                                    <p>Klik <a href="http://gamecenter.org/index.php?content=verify&id=' . $id . '&pwh=' . $password_hash . '">hier</a> voor het activeren van uw account.</p>
 
                                                     <!-- Optional JavaScript -->
                                                     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

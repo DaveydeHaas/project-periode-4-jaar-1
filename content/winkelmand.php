@@ -2,7 +2,7 @@
 require_once("./scripts/component.php");
 require_once("./scripts/db_content.php");
 
-
+//verwijderd de content uit de sessie
     if(isset($_POST['verwijder'])){
         if($_GET['action'] == $_POST['verwijder']){
             foreach($_SESSION['cart'] as $key => $value){
@@ -14,6 +14,13 @@ require_once("./scripts/db_content.php");
             }
         
     }
+}
+
+if(isset($_POST['add+'])){
+    $amount = $_POST['amount'];
+    $amount + '1';
+    echo $amount;
+
 }
 
 ?>
