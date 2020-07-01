@@ -224,7 +224,7 @@ switch($alert){
         header("Refresh: 3; ./index.php?content=home");
     break;
 
-    case "":
+    case "no-admin":
         echo '
         <div class="alert alert-danger" role="alert">
         <br>

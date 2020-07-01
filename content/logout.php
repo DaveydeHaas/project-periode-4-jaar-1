@@ -1,4 +1,4 @@
-logout
+<!-- logout -->
 <?php
 
     unset($_SESSION["id"]);
