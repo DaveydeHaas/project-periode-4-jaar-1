@@ -144,7 +144,7 @@ switch($alert){
         <p>u bent uitgelogd en wordt doorverwezen naar de homepage.</p>
         <br>
         </div>'; 
-        header("Refresh:3 ; ./index.php?content=home");
+        header("Refresh:3 ; ./index.php");
     break;
 
     case "auth-error":
@@ -237,10 +237,37 @@ switch($alert){
         header("Refresh: 3; ./index.php?content=home");
     break;
 
+    case "bestelling-no-user":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>Log in of registreer om een bestelling te kunnen uitvoeren.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 5; ./index.php?content=login");
+    break;
+
+    case "":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen rechten op deze pagina.<hr> U wordt doorgestuurd naar de homepage</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=home");
+    break;
+
 
     default:
-        header("Location: ./index.php?content=home");
+    header("Location: ./index.php?content=home");
     break;
+
     
 }
 ?>

@@ -43,11 +43,13 @@ function cartElement($image,$productName, $price, $productId){
                     </div>
                 </div>
                 <div class="col-md-3 py-5">
-                    <div>
+                    
+                    <!-- HIER KWAM IK NIET AAN TOE.
+                     <div>
                         <button type="button" id="add+" class="btn btn-light rounded-circle"><i class="fa fa-plus"></i></button>
                         <input type="text" value="1" id="amount" class="form-control w-25 d-inline">
                         <button type="button" id="add-" class="btn btn-light rounded-circle"><i class="fa fa-minus"></i></button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
