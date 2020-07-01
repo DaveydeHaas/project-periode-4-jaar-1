@@ -82,8 +82,8 @@ if(isset($_POST['add+'])){
                     </div>
                     <div class="col-md-7"></div>
                     <div class="col-md-3">
-                    <form action="index.php?content=bestelling&verwijder&id='. $productId .'" method="POST" class="cart-items winkelmand">
-                        <button type="submit" class="btn btn-warning">Bestellen</button>
+                    <form action="./index.php?content=bestelling" method="POST">
+                        <button type="submit" class="btn btn-warning" name="bestelling">Bestellen</button>
                     </form>
                     </div>
                 </div>

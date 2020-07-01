@@ -250,6 +250,84 @@ switch($alert){
         header("Refresh: 5; ./index.php?content=login");
     break;
 
+    case "bestelling-no-firstname":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen voornaam ingevuld.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=bestelling");
+    break;
+
+    case "bestelling-no-lastname":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen achternaam ingevuld.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=bestelling");
+    break;
+
+    case "bestelling-no-city":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen woonplaats ingevuld.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=bestelling");
+    break;
+
+    case "bestelling-no-adres":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen postcode ingevuld.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=bestelling");
+    break;
+
+    case "bestelling-no-house-number":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen huisnummer ingevuld.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=bestelling");
+    break;
+
+    case "bestelling-no-land":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>U heeft geen land ingevuld.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=bestelling");
+    break;
+
     case "":
         echo '
         <div class="alert alert-danger" role="alert">

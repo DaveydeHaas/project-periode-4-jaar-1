@@ -1,4 +1,5 @@
 <?php
+//sanitizes data to secure the website against dangers.
 function sanitize($raw_data) 
 {
     global $conn;

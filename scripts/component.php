@@ -1,5 +1,5 @@
 <?php
-//Standaard card kan opgevraagd worden als component()
+//Standaard card kan opgevraagd worden als component() voor de producten
 function component($productName, $price, $image, $beschrijving, $productId){
 
     $element = '         
@@ -25,7 +25,7 @@ function component($productName, $price, $image, $beschrijving, $productId){
 
     echo $element;
 }
-
+//card voor in de winkelmand voor de producten wordt opgevraagd met component()
 function cartElement($image,$productName, $price, $productId){
     $element='
     <form action="index.php?content=winkelmand&verwijder&id='. $productId .'" method="POST" class="cart-items winkelmand">
@@ -44,12 +44,11 @@ function cartElement($image,$productName, $price, $productId){
                 </div>
                 <div class="col-md-3 py-5">
                     
-                    <!-- HIER KWAM IK NIET AAN TOE.
                      <div>
                         <button type="button" id="add+" class="btn btn-light rounded-circle"><i class="fa fa-plus"></i></button>
                         <input type="text" value="1" id="amount" class="form-control w-25 d-inline">
                         <button type="button" id="add-" class="btn btn-light rounded-circle"><i class="fa fa-minus"></i></button>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
